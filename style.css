@@ -1,0 +1,46 @@
+.small {
+    font-size: 0.6em;
+    font-style: italic;
+}
+
+.river {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+.track {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    animation: slide 5s linear infinite;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.floater {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+    flex-shrink: 0;
+    white-space: nowrap;
+    padding: 0 2rem; /* Handles spacing cleanly between all items */
+}
+
+.group a:nth-child(2) {
+    color: #ff0000;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
