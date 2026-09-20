@@ -6,33 +6,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>404</h1>
-    <p>Oops. Page Not Found!</p>
-    <img src="img/smile-confused.svg" style="width: 200; height: 200;" alt="not smiling">
-    <div style="height:65vh"></div>
-    <p>But while you're here...</p>
-    <p>
-        Hi, my name's <strong>Dubby</strong><span class="small">y</span>! As
-        you probably guessed, I like programming, and I love making new things.
-        Right now I'm working on an autonomous robot swarm that <i>definitely
-        </i> won't take over the world :>
-    </p>
-    <p>If you want to stay up to date on all my latest projects,
-        click <a href="https://dubbyy.com">here</a> to see my REAL website.
-    </p>
-    <div style="height:10vh"></div>
+    <section id="404">
+        <h1>404</h1>
+        <p>Oops. Page Not Found!</p>
+        <img src="img/smile-confused.svg" style="width: 200; height: 200;" alt="not smiling">
+        <div style="height:65vh"></div>
+    </section>
 
-    <header>
-        <h2>Not a footer</h2>
-        <nav>
-          <a href="https://dubbyy.com">My website</a>
-          <a href="https://github.com/dubbyy1">Github</a>
-          <a href="https://stardance.hackclub.com/@dubbyy">Stardance</a>
-          <a href="https://osu.ppy.sh/users/40502868">osu!</a>
-        </nav>
-    </header>
 
-    <div style="height:5vh"></div>
+    <section id="about">
+      <h3>But while you're here...</h3>
+      <p>
+          Hi, my name's <strong>Dubby</strong><span class="small">y</span>! As
+          you probably guessed, I like programming, and I love making new things.
+          Right now I'm working on an autonomous robot swarm that <i>definitely
+          </i> won't take over the world :>
+      </p>
+      <p>If you want to stay up to date on all my latest projects,
+          click <a href="https://dubbyy.com">here</a> to see my REAL website.
+      </p>
+    </section>
 
     <div class="river">
         <div class="track">
@@ -63,10 +56,45 @@
         </div>
     </div>
 
+    <header>
+        <h2>Not a footer</h2>
+        <nav>
+            <a href="#404">404</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <span>•</span>
+            <a href="https://dubbyy.com">My website</a>
+            <a href="https://github.com/dubbyy1">Github</a>
+            <a href="https://stardance.hackclub.com/@dubbyy">Stardance</a>
+            <a href="https://osu.ppy.sh/users/40502868">osu!</a>
+        </nav>
+    </header>
+
+    <div style="height:5vh"></div>
+
+
+    <section id="gallery">
+        <h1>Memories from Stardance</h1>
+        <div class="memories">
+            <div class="memory">
+                <img style="width: 100%;" src="img/first_ship.png" alt="My first ship"></img>
+                <p class="caption">My first ship</p>
+            </div>
+            <div class="memory">
+                <img style="width: 100%;" src="img/glitch.png" alt="Screen super glitched"></img>
+                <p class="caption">When the particle simulation cooked my GPU</p>
+            </div>
+            <div class="memory">
+                <img style="width: 100%;" src="img/leaderboard.png" alt="My first ship"></img>
+                <p class="caption">The day I locked in</p>
+            </div>
+        </div>
+    </section>
+
     <div style="height:25vh"></div>
     <p class="small">how did you even get here?</p>
 
-    <script>console.log("what are you doing here?")</script>
+    <script>console.log("hey stop looking!")</script>
 
 </body>
 </html>

@@ -44,3 +44,16 @@
         transform: translateX(0%);
     }
 }
+
+.memories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0rem 3rem;
+}
+
+.memory {
+    max-width: 650px;
+    text-align: center;
+    font-style: italic;
+}
